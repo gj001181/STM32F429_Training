@@ -191,7 +191,7 @@ uint16_t adc_dataX=0,adc_dataY=0,adc_dataZ=0;
 int i=0;
 float voltageX =0.0f,voltageY =0.0f,voltageZ =0.0f;
 float AccX =0.0f,AccY =0.0f,AccZ =0.0f;
-const float alpha = 0.5;
+const float alpha = 0.03;
 double fXg = 0;
 double fYg = 0;
 double fZg = 0;
@@ -374,7 +374,7 @@ int main(void)
     LCD_SetColors(ASSEMBLE_RGB(colorR, colorG, colorB),LCD_COLOR_BLACK);
     LCD_DrawFullRect(0,0,240,320);
 
-    Delay_1us(150000);
+    //Delay_1us(150000);
 
   }
   
